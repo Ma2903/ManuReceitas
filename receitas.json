@@ -1,0 +1,163 @@
+    [
+        {
+            "name": "Cookie Americano",
+            "description": "Cookies clássicos com gotas de chocolate, perfeitos para qualquer ocasião.",
+            "image": "imgs/cookie.png",
+            "category": "Sobremesa",
+            "prepTime": "40 minutos",
+            "difficulty": "Fácil",
+            "servings": "20 cookies",
+            "ingredients": [
+                "125g de manteiga em temperatura ambiente",
+                "½ xícara de açúcar",
+                "½ xícara de açúcar mascavo",
+                "1 ovo",
+                "1 colher de chá de essência de baunilha",
+                "1 e ½ xícara de farinha de trigo",
+                "1 colher de chá de fermento em pó",
+                "300g de chocolate meio amargo picado",
+                "¼ de xícara de achocolatado (opcional, para cookie de chocolate)",
+                "Papel manteiga"
+            ],
+            "instructions": [
+                "Misture a manteiga, os açúcares e a essência de baunilha. Se for fazer o cookie de chocolate, adicione o achocolatado.",
+                "Adicione o ovo batido e misture bem.",
+                "Acrescente a farinha e, em seguida, o fermento. Misture até incorporar.",
+                "Adicione o chocolate picado à massa.",
+                "Faça pequenas bolinhas e coloque em uma forma forrada com papel manteiga.",
+                "Asse em forno pré-aquecido a 250°C por 15 a 20 minutos.",
+                "Após esfriar, retire da forma e sirva."
+            ]
+        },
+        {
+            "name": "Pavê de Bolacha",
+            "description": "Uma sobremesa gelada, cremosa e deliciosa que agrada a todos.",
+            "image": "imgs/pave.png",
+            "category": "Sobremesa",
+            "prepTime": "4 horas",
+            "difficulty": "Médio",
+            "servings": "8 pessoas",
+            "ingredients": [
+                "3 pacotes de bolacha maisena",
+                "½ xícara de leite (para molhar a bolacha)",
+                "1 lata de leite condensado",
+                "2 gemas peneiradas",
+                "3 colheres de sopa de maisena",
+                "700 ml de leite",
+                "1 barra de chocolate meio amargo",
+                "1 lata de creme de leite",
+                "1 colher de chá de essência de baunilha"
+            ],
+            "instructions": [
+                "Em uma panela, coloque o leite condensado, as gemas, o leite (700ml), a baunilha e a maisena. Mexa em fogo baixo até engrossar e deixe esfriar.",
+                "Em uma travessa, monte camadas alternadas de bolacha (molhada no ½ xícara de leite) e o creme. Faça duas camadas de cada.",
+                "Para a cobertura, derreta a barra de chocolate e misture com o creme de leite.",
+                "Despeje a cobertura sobre o pavê.",
+                "Leve para gelar por pelo menos 3 horas antes de servir."
+            ]
+        },
+        {
+            "name": "Brownie de Chocolate",
+            "description": "Um brownie denso, molhadinho e com uma casquinha crocante. Impossível resistir!",
+            "image": "imgs/brownie.webp",
+            "category": "Bolo",
+            "prepTime": "50 minutos",
+            "difficulty": "Fácil",
+            "servings": "9 porções",
+            "ingredients": [
+                "100g de manteiga em temperatura ambiente",
+                "½ xícara de açúcar",
+                "½ xícara de açúcar mascavo",
+                "¾ de xícara de achocolatado",
+                "2 ovos",
+                "¾ de xícara de farinha de trigo",
+                "1 colher de chá de fermento"
+            ],
+            "instructions": [
+                "Misture a manteiga, os açúcares, o achocolatado e os ovos.",
+                "Adicione a farinha e o fermento e misture bem.",
+                "Coloque a mistura em uma forma pequena (20x20cm) forrada com papel manteiga.",
+                "Asse em forno pré-aquecido por 20 a 40 minutos.",
+                "Retire do forno, espere esfriar um pouco e sirva."
+            ]
+        },
+        {
+            "name": "Bolo de Maracujá",
+            "description": "Um bolo fofinho com uma calda azedinha de maracujá por cima.",
+            "image": "imgs/bolo-maracuja.png",
+            "category": "Bolo",
+            "prepTime": "50 minutos",
+            "difficulty": "Médio",
+            "servings": "10 pessoas",
+            "ingredients": [
+                "3 ovos (gemas e claras separadas)",
+                "½ xícara de óleo",
+                "1 xícara de açúcar",
+                "3 colheres de sopa de suco de maracujá",
+                "1 xícara de farinha de trigo",
+                "½ xícara de maisena",
+                "100 ml de leite",
+                "½ colher de sopa de fermento",
+                "Para a calda: ½ xícara de suco de maracujá e ¾ xícara de açúcar"
+            ],
+            "instructions": [
+                "Calda: Em uma panela, coloque o suco de maracujá e o açúcar, mexa em fogo baixo até ferver. Desligue e reserve.",
+                "Bolo: Pré-aqueça o forno a 180°C e prepare uma forma (20x20cm).",
+                "Bata as claras em neve e reserve.",
+                "Na batedeira, bata o açúcar, o óleo e as gemas até formar um creme claro.",
+                "Adicione o leite e o suco de maracujá, e bata mais um pouco.",
+                "Peneire a farinha, a maisena e o fermento sobre o creme e misture levemente com um fuê.",
+                "Incorpore as claras em neve delicadamente à massa.",
+                "Despeje na forma e asse por 30 a 35 minutos.",
+                "Retire do forno, faça furinhos no bolo com um garfo e despeje a calda por cima."
+            ]
+        },
+        {
+            "name": "Bolo de Laranja",
+            "description": "Um bolo simples, fofinho e com um sabor incrível de laranja fresca.",
+            "image": "imgs/bolo-laranja.jpg",
+            "category": "Bolo",
+            "prepTime": "45 minutos",
+            "difficulty": "Fácil",
+            "servings": "10 pessoas",
+            "ingredients": [
+                "3 ovos",
+                "1 laranja com casca e sem sementes",
+                "2 xícaras de açúcar",
+                "½ xícara de óleo",
+                "2 xícaras de farinha de trigo",
+                "1 colher de sopa de fermento"
+            ],
+            "instructions": [
+                "No liquidificador, bata os ovos, a laranja, o açúcar e o óleo.",
+                "Em uma tigela, peneire a farinha e o fermento.",
+                "Despeje a mistura do liquidificador na tigela e mexa até a massa ficar homogênea.",
+                "Coloque a massa em uma forma untada e enfarinhada.",
+                "Leve ao forno pré-aquecido a 180°C até dourar e o palito sair limpo."
+            ]
+        },
+        {
+            "name": "Bolo de Cenoura",
+            "description": "O clássico bolo de cenoura fofinho, perfeito com uma cobertura de chocolate.",
+            "image": "imgs/bolo-cenoura.jpg",
+            "category": "Bolo",
+            "prepTime": "50 minutos",
+            "difficulty": "Fácil",
+            "servings": "12 pessoas",
+            "ingredients": [
+                "3 ovos",
+                "2 cenouras médias, raladas ou picadas",
+                "1 xícara de óleo",
+                "2 xícaras de açúcar",
+                "2 xícaras de farinha de trigo",
+                "1 colher de sopa de fermento em pó"
+            ],
+            "instructions": [
+                "No liquidificador, bata os ovos, as cenouras, o óleo e o açúcar até ficar homogêneo.",
+                "Em uma bacia, misture a farinha e o fermento.",
+                "Despeje a mistura do liquidificador sobre os ingredientes secos e mexa bem.",
+                "Coloque a massa em uma forma untada e enfarinhada.",
+                "Leve ao forno pré-aquecido a 180°C por cerca de 40 minutos, ou até o palito sair limpo."
+            ]
+        }
+    ]

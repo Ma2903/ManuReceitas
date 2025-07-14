@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubra receitas caseiras e deliciosas que unem a família. De jantares rápidos a pratos para ocasiões especiais!">
+    <title>Receitas da Manu - Culinária Caseira Deliciosa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍳</text></svg>">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="logo">
+                    <i class="fas fa-utensils"></i>
+                    Receitas da Manu
+                </h1>
+                <p class="tagline">Onde cada refeição conta uma história <i class="fas fa-heart"></i></p>
+                <div class="recipe-count" aria-live="polite">
+                    <span id="recipeCounter">0</span> receitas deliciosas para explorar!
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2 class="hero-title">Bem-vindo(a) à Minha Cozinha!</h2>
+                    <p class="hero-description">
+                        Descubra receitas caseiras e deliciosas que unem a família.
+                        De jantares rápidos durante a semana a pratos para ocasiões especiais!
+                    </p>
+                    <div class="hero-icons">
+                        <i class="fas fa-cookie-bite" aria-hidden="true"></i>
+                        <i class="fas fa-birthday-cake" aria-hidden="true"></i>
+                        <i class="fas fa-pizza-slice" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="recipes-section">
+            <div class="container">
+                <div class="search-filter-section">
+                <div class="search-container">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="searchInput" placeholder="Buscar receitas..." class="search-input" aria-label="Buscar receitas">
+                    <button id="clearSearchBtn" class="clear-search-btn" aria-label="Limpar busca" style="display: none;"><i class="fas fa-times"></i></button>
+                </div>
+
+                <div class="filter-container" id="categoryFilterContainer">
+                    </div>
+
+                <div class="filter-container">
+                <select id="difficultyFilter" class="filter-select-hidden" aria-label="Filtrar por dificuldade">
+                    <option value="">Todas as Dificuldades</option>
+                    <option value="fácil">Fácil</option>
+                    <option value="médio">Médio</option>
+                    <option value="difícil">Difícil</option>
+                </select>
+
+                <div class="custom-select-wrapper" id="customSelectDifficulty">
+                    <div class="custom-select-trigger" tabindex="0">
+                        <span>Todas as Dificuldades</span>
+                        <i class="fas fa-chevron-down custom-arrow"></i>
+                    </div>
+                    <div class="custom-options">
+                        <div class="custom-option" data-value="">Todas as Dificuldades</div>
+                        <div class="custom-option" data-value="fácil">Fácil</div>
+                        <div class="custom-option" data-value="médio">Médio</div>
+                        <div class="custom-option" data-value="difícil">Difícil</div>
+                    </div>
+                </div>
+            </div>
+                <button id="showFavoritesBtn" class="action-btn favorite-btn">
+                    <i class="far fa-heart"></i>
+                    <span>Ver Favoritos</span>
+                </button>
+            </div>
+
+                <h2 class="section-title">
+                    <i class="fas fa-book-open"></i>
+                    Coleção de Receitas
+                </h2>
+
+                <div class="no-results" id="noResults" style="display: none;">
+                    <i class="fas fa-search"></i>
+                    <h3>Nenhuma receita encontrada</h3>
+                    <p>Tente ajustar sua busca ou filtros</p>
+                </div>
+
+                <div class="recipes-grid" id="recipesGrid"></div>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal-overlay" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modal">
+            <button class="modal-close" id="modalClose" aria-label="Fechar modal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img class="modal-image" id="modalImage" src="" alt="Imagem da receita">
+                    <div class="modal-title-section">
+                        <h2 class="modal-title" id="modalTitle"></h2>
+                        <div class="recipe-meta">
+                            <span class="prep-time" id="modalPrepTime"></span>
+                            <span class="difficulty" id="modalDifficulty"></span>
+                            <span class="servings" id="modalServings"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div class="ingredients-section">
+                        <h3><i class="fas fa-list-ul"></i> Ingredientes</h3>
+                        <ul class="ingredients-list" id="modalIngredients"></ul>
+                    </div>
+                    <div class="instructions-section">
+                        <h3><i class="fas fa-clipboard-list"></i> Modo de Preparo</h3>
+                        <ol class="instructions-list" id="modalInstructions"></ol>
+                    </div>
+                    <div class="recipe-actions">
+                        <button class="action-btn favorite-btn" id="favoriteBtn">
+                            <i class="far fa-heart"></i>
+                            <span>Adicionar aos Favoritos</span>
+                        </button>
+                        <button class="action-btn share-btn" id="shareBtn">
+                            <i class="fas fa-share-alt"></i>
+                            <span>Compartilhar</span>
+                        </button>
+                        <button class="action-btn print-btn" id="printBtn">
+                            <i class="fas fa-print"></i>
+                            <span>Imprimir</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="sobre" class="about-section">
+    <div class="container">
+        <h2 class="section-title">
+            <i class="fas fa-user-circle"></i>
+            Sobre a Manu
+        </h2>
+        <div class="about-content">
+            <img src="imgs/eu.webp" alt="Foto da Manu" class="profile-pic">
+            <div class="about-text">
+                <h3>Olá, eu sou a Manu!</h3>
+                <p>Sou uma desenvolvedora Front-End apaixonada por criar experiências digitais que sejam tanto funcionais quanto visualmente agradáveis. Este projeto, "Receitas da Manu", foi criado com muito carinho para compartilhar minha paixão pela culinária e pela tecnologia.</p>
+                <p>Aqui, combino minhas habilidades em HTML, CSS e JavaScript para apresentar receitas deliciosas de uma forma simples e interativa. Espero que você goste de explorar os pratos tanto quanto eu gostei de desenvolver este site!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="contato" class="contact-section">
+    <div class="container">
+        <h2 class="section-title">
+            <i class="fas fa-envelope"></i>
+            Entre em Contato
+        </h2>
+        <p class="contact-description">Gostou do meu trabalho ou quer trocar uma ideia? Me encontre nas redes abaixo!</p>
+        <div class="contact-links">
+            <a href="https://github.com/ma2903" target="_blank" class="contact-link-item" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+                <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/manoela-p-44aa75259/" target="_blank" class="contact-link-item" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+                <span>LinkedIn</span>
+            </a>
+            <a href="mailto:manoelaps2022@gmail.com" class="contact-link-item" aria-label="Email">
+                <i class="fas fa-envelope-square"></i>
+                <span>Email</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Receitas da Manu. Feito com <i class="fas fa-heart"></i> e muito amor!</p>
+                <div class="footer-links">
+                    <a href="#sobre" class="footer-link">Sobre</a>
+                    <a href="#contato" class="footer-link">Contato</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="loading-spinner" id="loadingSpinner">
+        <div class="spinner">
+            <i class="fas fa-utensils"></i>
+        </div>
+        <p>Carregando receitas deliciosas...</p>
+    </div>
+
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle"></i>
+        <span id="toastMessage">Ação concluída!</span>
+    </div>
+    
+    <a href="#" id="backToTopBtn" class="back-to-top" aria-label="Voltar ao topo" title="Voltar ao topo"><i class="fas fa-arrow-up"></i></a>
+
+    <script src="main.js"></script>
+
+</body>
+</html>
