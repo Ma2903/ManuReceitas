@@ -1029,7 +1029,7 @@ body {
     /* Ajusta o tamanho da foto para telas menores */
     .profile-pic {
         width: 150px;
-        height: 150px;
+        height: 200px;
     }
 }
 
