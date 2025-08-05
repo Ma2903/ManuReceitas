@@ -215,5 +215,155 @@
             "Adicione o creme de leite e o leite em pó e bata mais um pouco.",
             "Desenforme o bolo, despeje a cobertura por cima e polvilhe com leite em pó."
         ]
+    },
+    {
+        "name": "Arroz Carreteiro com Linguiça e Bacon",
+        "description": "Um arroz carreteiro completo e saboroso, feito com a gordura do bacon e uma mistura de carnes.",
+        "image": "imgs/arroz-carreteiro.png",
+        "category": "Prato Principal",
+        "prepTime": "45 minutos",
+        "difficulty": "Médio",
+        "servings": "4 a 5 porções",
+        "ingredients": [
+            "2 ½ xícaras de arroz cru",
+            "250g de linguiça toscana (sem pele, esfarelada)",
+            "200g de linguiça calabresa (em cubinhos ou meia-lua)",
+            "150g de bacon (em cubinhos)",
+            "1 cebola média picada",
+            "1 colher de sopa de pasta de alho",
+            "1 ½ tomate picado",
+            "1 cenoura pequena ralada (opcional)",
+            "1 xícara de milho verde (escorrido)",
+            "5 xícaras de água quente",
+            "Sal a gosto (cuidado com o sal dos embutidos)"
+        ],
+        "instructions": [
+            "Frite o bacon em fogo médio até ficar crocante. Retire o bacon e reserve a gordura na panela.",
+            "Na mesma panela, frite a calabresa até dourar.",
+            "Adicione a cebola e refogue, depois junte o alho.",
+            "Acrescente a linguiça toscana esfarelada e cozinhe até dourar.",
+            "Junte o tomate e a cenoura e refogue por 3 minutos.",
+            "Adicione o arroz e o milho, misturando bem.",
+            "Coloque a água quente, ajuste o sal e cozinhe por cerca de 20 minutos com a panela semi-tampada.",
+            "Quando a água quase secar, abaixe o fogo, tampe a panela e cozinhe no vapor por mais 5 minutos.",
+            "Solte o arroz com um garfo e sirva com o bacon crocante por cima."
+        ]
+    },
+    {
+        "name": "Bolo de Chocolate de Liquidificador",
+        "description": "Bolo de chocolate super prático e fofinho, feito todo no liquidificador.",
+        "image": "imgs/bolo-chocolate.png",
+        "category": "Bolo",
+        "prepTime": "45 minutos",
+        "difficulty": "Fácil",
+        "servings": "10 porções",
+        "ingredients": [
+            "3 ovos",
+            "1 xícara de açúcar",
+            "1 xícara de leite",
+            "1/2 xícara de óleo",
+            "1 xícara de chocolate em pó",
+            "2 xícaras de farinha de trigo",
+            "1 colher (sopa) de fermento em pó"
+        ],
+        "instructions": [
+            "No liquidificador, bata os ovos, o açúcar, o leite, o óleo e o chocolate por 2 minutos.",
+            "Acrescente a farinha aos poucos, batendo.",
+            "Por último, adicione o fermento e bata rapidamente só para misturar.",
+            "Despeje em uma forma untada e enfarinhada.",
+            "Asse em forno pré-aquecido a 180°C por 35 a 40 minutos."
+        ]
+    },
+    {
+        "name": "Bolo de Fubá de Liquidificador",
+        "description": "Um bolo de fubá tradicional e fofinho, muito fácil de fazer no liquidificador.",
+        "image": "imgs/bolo-fuba.png",
+        "category": "Bolo",
+        "prepTime": "45 minutos",
+        "difficulty": "Fácil",
+        "servings": "10 porções",
+        "ingredients": [
+            "3 ovos",
+            "1 xícara de açúcar",
+            "1 xícara de leite",
+            "1/2 xícara de óleo",
+            "1 xícara de fubá",
+            "1 xícara de farinha de trigo",
+            "1 colher (sopa) de fermento em pó"
+        ],
+        "instructions": [
+            "No liquidificador, bata os ovos, o açúcar, o leite e o óleo por 1 minuto.",
+            "Adicione o fubá e a farinha e bata até a massa ficar lisa.",
+            "Coloque o fermento e bata rapidamente para misturar.",
+            "Despeje em forma untada e enfarinhada.",
+            "Asse em forno pré-aquecido a 180°C por 35 a 40 minutos."
+        ]
+    },
+    {
+        "name": "Caipirinha Tradicional",
+        "description": "A clássica e refrescante caipirinha brasileira, perfeita para todas as ocasiões.",
+        "image": "imgs/caipirinha.png",
+        "category": "Bebida",
+        "prepTime": "5 minutos",
+        "difficulty": "Fácil",
+        "servings": "1 pessoa",
+        "ingredients": [
+            "1 limão",
+            "2 colheres de chá de açúcar",
+            "50 ml de cachaça",
+            "Gelo a gosto"
+        ],
+        "instructions": [
+            "Lave e corte o limão em 8 pedaços, removendo as extremidades.",
+            "Em um copo, macere o limão com o açúcar para extrair o suco.",
+            "Encha o copo com gelo.",
+            "Adicione a cachaça e mexa bem.",
+            "Decore com uma rodela de limão, se desejar."
+        ]
+    },
+    {
+        "name": "Caipirinha de Morango",
+        "description": "Uma deliciosa variação da caipirinha, feita com morangos frescos.",
+        "image": "imgs/caipirinha-morango.png",
+        "category": "Bebida",
+        "prepTime": "10 minutos",
+        "difficulty": "Fácil",
+        "servings": "1 pessoa",
+        "ingredients": [
+            "4 a 5 morangos maduros",
+            "2 colheres de chá de açúcar",
+            "50 ml de cachaça, vodka ou rum branco",
+            "Gelo a gosto"
+        ],
+        "instructions": [
+            "Lave e corte os morangos em pedaços.",
+            "Em um copo, macere os morangos com o açúcar até formar uma calda.",
+            "Encha o copo com gelo.",
+            "Adicione a bebida alcoólica de sua preferência.",
+            "Misture bem e sirva imediatamente."
+        ]
+    },
+    {
+        "name": "Caipirinha de Morango (Infantil)",
+        "description": "Uma versão divertida e sem álcool da caipirinha de morango, ideal para crianças.",
+        "image": "imgs/caipirinha-morango-infantil.png",
+        "category": "Bebida",
+        "prepTime": "10 minutos",
+        "difficulty": "Fácil",
+        "servings": "1 pessoa",
+        "ingredients": [
+            "4 a 5 morangos maduros",
+            "2 colheres de chá de açúcar (ou mel)",
+            "100 ml de água com gás ou refrigerante de limão",
+            "Gelo a gosto",
+            "Hortelã ou limão para decorar (opcional)"
+        ],
+        "instructions": [
+            "Lave e corte os morangos em pedaços.",
+            "Em um copo, amasse os morangos com o açúcar (ou mel).",
+            "Adicione gelo até encher o copo.",
+            "Complete com água com gás ou refrigerante de limão.",
+            "Misture bem e decore antes de servir."
+        ]
     }
 ]
