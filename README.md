@@ -1,31 +1,36 @@
 # 🍳 Receitas da Manu
 
-Bem-vindo(a) ao repositório "Receitas da Manu", um site de receitas interativo e com design moderno, criado para demonstrar habilidades de desenvolvimento front-end.
+Bem-vindo(a) ao "Receitas da Manu", um livro de receitas digital, interativo e com design moderno. Este projeto foi criado para demonstrar habilidades de desenvolvimento front-end com as tecnologias essenciais da web: HTML, CSS e JavaScript puro.
+
+**[➡️ Visite o site e explore as receitas ao vivo!](https://ma2903.github.io/ManuReceitas/)**
+
+---
 
 ## 📖 Sobre o Projeto
 
-"Receitas da Manu" é uma aplicação web de página única (SPA) que permite aos usuários explorar, buscar e filtrar uma coleção de receitas deliciosas. O projeto foi desenvolvido com foco em uma experiência de usuário limpa, funcionalidades dinâmicas e um código bem estruturado, utilizando apenas HTML, CSS e JavaScript puro (vanilla JS).
+"Receitas da Manu" é uma aplicação web de página única (SPA) que permite aos usuários explorar uma coleção de pratos deliciosos de forma fluida e agradável. O projeto foi desenvolvido com foco total em uma experiência de usuário limpa, funcionalidades dinâmicas e um código bem estruturado, utilizando apenas tecnologias nativas do navegador, sem frameworks.
 
-## ✨ Funcionalidades
+## ✨ Funcionalidades Principais
 
-- **Visualização Dinâmica:** As receitas são carregadas de um arquivo `JSON` e renderizadas dinamicamente na página.
-- **Busca Inteligente:** Campo de busca que filtra as receitas cujo nome **começa com** o termo digitado.
-- **Filtros Avançados:** Filtre receitas por **Categoria** e **Dificuldade** através de menus customizados e interativos.
-- **Sistema de Favoritos:** Marque suas receitas preferidas! A seleção é salva no `localStorage` do navegador, persistindo entre as sessões.
-- **Modal de Detalhes:** Clique em uma receita para ver todos os detalhes (ingredientes, modo de preparo) em um modal elegante, sem recarregar a página.
-- **Layout Responsivo:** A interface se adapta perfeitamente a diferentes tamanhos de tela, de desktops a dispositivos móveis.
-- **Função de Impressão:** Um layout de impressão otimizado permite que os usuários imprimam as receitas de forma limpa e legível.
+* **Renderização Dinâmica:** As receitas são carregadas a partir de um arquivo `JSON` e exibidas na tela de forma assíncrona.
+* **Busca e Filtros Avançados:**
+    * **Busca Inteligente:** Filtra receitas em tempo real conforme o usuário digita.
+    * **Filtros por Categoria e Dificuldade:** Permitem refinar a busca com menus interativos e personalizados.
+* **Sistema de Favoritos:** Os usuários podem marcar suas receitas preferidas, e a seleção é salva no `localStorage`, persistindo entre as visitas ao site.
+* **Modal de Detalhes:** Ao clicar em uma receita, um modal elegante exibe os ingredientes e o modo de preparo sem a necessidade de recarregar a página.
+* **Layout Totalmente Responsivo:** A interface se adapta perfeitamente a qualquer tamanho de tela, de desktops a smartphones.
+* **Função de Impressão:** Um layout otimizado gera uma versão limpa e legível da receita, pronta para ser impressa.
 
 ## 🛠️ Tecnologias Utilizadas
 
-- **HTML5:** Estrutura semântica e acessível.
-- **CSS3:** Estilização moderna com Flexbox, Grid, variáveis CSS para temas e animações.
-- **JavaScript (ES6+):** Manipulação do DOM, interatividade, lógica de filtros e comunicação com a API (JSON).
-- **Font Awesome:** Ícones utilizados em toda a interface.
+* **HTML5:** Estrutura semântica e acessível.
+* **CSS3:** Estilização moderna com Flexbox, Grid Layout, variáveis para temas, e animações sutis que melhoram a experiência.
+* **JavaScript (ES6+):** Utilizado para manipulação do DOM, interatividade, lógica de filtros e consumo dos dados do JSON.
+* **Font Awesome:** Biblioteca de ícones utilizada em toda a interface.
 
-## 🚀 Como Executar
+## 🚀 Como Executar Localmente
 
-Por ser um projeto front-end estático, não há necessidade de um servidor ou processo de build.
+Por ser um projeto front-end estático, a execução é muito simples.
 
 1.  Clone este repositório:
     ```bash
